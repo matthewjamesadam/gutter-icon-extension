@@ -1,0 +1,40 @@
+{
+  "name": "gutter-icon-extension",
+  "displayName": "Gutter Icon",
+  "description": "Gutter Icon for VSCode",
+  "version": "0.0.1",
+  "publisher": "matthewjamesadam",
+  "engines": {
+    "vscode": "^1.66.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "helloworld.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "yes | vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^8.10.25",
+    "@types/vscode": "^1.66.0",
+    "tslint": "^5.16.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "vsce": "^2.10.2"
+  }
+}

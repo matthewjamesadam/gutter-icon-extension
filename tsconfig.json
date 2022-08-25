@@ -1,0 +1,20 @@
+{
+  "include": ["src"],
+  "exclude": ["node_modules"],
+
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": "./src",
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "strict": true /* enable all strict type-checking options */,
+    "incremental": true,
+    "jsx": "react-jsx",
+    "resolveJsonModule": true
+  }
+}
